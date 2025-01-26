@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#f9f9f9;
+    color:#333;
+}
+
+html, body {
+    overflow-x: hidden; /* Yatay kaydırmayı devre dışı bırakır */
+}
+
+header{
+    background-color: orange;
+    color:aliceblue;
+    padding:20px;
+    text-align: center;
+    list-style-type: none;
+    
+}
+
+nav ul li a{
+
+    text-decoration: none;
+    display: inline-block;
+    
+    
+}
+
+nav ul li{
+    list-style-type: none; /*Listenin başındaki boşlugu kaldırır.*/
+    display: inline-block; /*Liste elemanlarını yan yana dizer.*/
+    padding-left:20px; /*Liste elemanları arasındaki boşluğu verir.*/
+    
+}
+
+header h1{
+    margin-top: 10px;
+    margin-bottom:15px; /*Başlıgın altındaki boşlugu ayarlamaya yarar.*/
+    
+}
+
+nav ul li a:hover{
+    color: cadetblue; /*Ok gittiğinde yani tıklanırkenki renk.*/
+}
+
+.search-container{
+    margin:40px;
+    text-align: center;
+
+}
+
+.search-container input{
+    padding:10px; /*Metin içerisindeki yazının */
+    font-size: 20px;
+    border-radius:20px;
+    border:3px solid black;
+    height:35px; /*Bu inputın oldugu çerçevenin boyutunu ayarlıyor.*/
+}
+.search-container button{
+
+    font-size: 20px;
+    margin-left:5px;
+    padding: 4px 30px; /*Buttondaki yazının çevre ve sag solundan ne kadar boşluk bırakacagını ayarlıyor.*/
+    border-radius:20px;
+    border:3px solid black;
+    
+}
+
+.hero{
+
+   
+    text-align: center;
+
+}
+
+.hero h1{
+    margin:20px;
+}
+
+.hero p{
+    margin:20px;
+}
+
+
+
+
+
+.order-button{
+    display: block;
+    margin: 0 auto;
+    margin-top:10px;
+    background-color:orange;
+    padding:10px 20px;
+    border-radius: 5px;
+}
+
+
+
+.hero {
+    background-image: url('img/adanakebap.jpg'); /* Görselinizi buraya ekleyin */
+    background-size: cover; /* Resmi kapsayacak şekilde ölçeklendirir */
+    background-position: center; /* Resmi ortalar */
+    background-repeat: no-repeat; /* Görselin tekrar etmesini engeller */
+    width: 100vw; /* Görselin yatayda tüm ekranı kaplamasını sağlar */
+    height: 50vh; /* Görselin dikeyde tüm ekranı kaplamasını sağlar */
+    color: #f9f9f9; /* Yazı rengini ayarlar */
+    align-items: center; /* Dikeyde hizalama */
+    justify-content: center; /* Yatayda hizalama */
+}
+
+.hero h1{
+    display: inline-block;
+    margin-top: 30px;
+}
+    
+
+.hero .button {
+    color: #f9f9f9;
+}
+.order-button:hover{
+    background-color:coral;
+    transition: 300ms;
+}
+.promotion .popular .menu{
+    max-width: 1200px;
+    margin: 20px;
+    position: relative;
+}
+
+.promotion h2, .popular h2, .menu
+h2{
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu h3{
+    text-align: center;
+    margin:20px 20px;
+}
+.menu-items {
+    display: flex; /* Ürünleri yan yana dizer */
+    flex-wrap: wrap; /* Satır dolduğunda yeni satır oluşturur */
+    gap: 20px; /* Ürünler arasındaki boşluk */
+    justify-content: center; /* Ürünleri yatayda ortalar */
+    width: 100%; /* Kapsayıcının tam genişliği */
+    margin: 0 auto; /* Kapsayıcıyı yatayda ortalar */
+}
+
+.menu-item {
+    width: calc(33.333% - 20px); /* Üç sütun düzeni için genişlik */
+    max-width: 300px; /* Çok geniş ekranlarda sınır */
+    padding: 20px; /* İçerik boşluğu */
+    border-radius: 5px; /* Köşe yuvarlama */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    background-color: #fff; /* Kart arka plan rengi */
+    display: flex; /* Flexbox özelliği */
+    flex-direction: column; /* İçeriği alt alta dizer */
+    align-items: center; /* İçeriği yatayda ortalar */
+    justify-content: center; /* İçeriği dikeyde ortalar */
+    text-align: center; /* Metni ortalar */
+}
+
+
+.menu-item:hover{
+    transition: 300ms all;
+    transform: scale(1.03);
+}
+.menu-item img{
+width:100%;
+}
+.menu-item span{
+    display: block;
+    font-weight: bold;
+    color: green;
+}
+del{
+    color: red;
+}
+
+.footer{
+    text-align: center;
+}

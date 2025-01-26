@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yemek Sitesi</title>
+    <link rel="stylesheet" href="style.css"> <!--Bunu biz ekledik link ile-->
+
+    <link rel="shortcut icon" href="img/dish.png" type="image/x-icon"> <!--flat icon ile seçtik.sonra link ile
+    dahil ettik. link: diyerek eklemeyi yaptık.-->
+    
+    
+
+</head>
+
+<body>
+    
+
+    <header> <!--Başlık olsugu için header oluşturduk.Bunun için class gerekmez 
+    çünkü zaten bir tane başlık oluyor.Yanı header unique-->
+
+   <h1>Lezzetli Yemekler</h1>
+
+   <nav>
+    <ul> <!--ul>li*4 yaptım.-->
+
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#">Menüler</a></li>
+        <li><a href="#">Hakkımızda</a></li>
+        <li><a href="#">İletişim</a></li>
+
+    </ul>
+   </nav>
+
+    </header>
+
+    <div class="search-container">
+
+      <input type="text" placeholder="Yemek ara...">  
+      <button type="submit">Ara</button>
+ 
+    </div> <!--div.search-container dedik.-->
+
+
+
+      
+   <div class="hero">
+      <h1>Lezzetli Yemeklerin Tek Adresi</h1>
+      <p>Lezzetli yemekler size bir tık uzakta.</p>
+      <a href="#" class="button">Yemekleri Keşfet</a> <!--Yukarıda da a etiketleri oldugu için
+    onların da butona dönüşmemesi için classını button verdik.-->
+
+   </div>
+
+  <!--section ile indirimli,popüler ve tüm yemeklerin oldugu bölümler oluşturacağız.-->
+
+   <section class="promotion"> <!--Bölüm parça anlamına geliyor.-->
+    <h2>İndirimli Yemekler</h2>
+
+   <div class="menu-items">
+
+    <div class="menu-item">
+
+        <img src="img/iskender.jpg" alt="iskender">
+        <h3>İskender</h3>
+        <p>Yoğurt,tereyağı ve özel sosla</p>
+        <p>hazırlanmış lezzetli bir döner.</p>
+        <span><del>80TL</del> &nbsp; 70TL</span>
+        <!--span etiketi ile fiyatı hedeflemek için kullandık.del etiketi ile eski fiyatın üstünü çizdi.
+        &nbsp ile de boşluk bıraktık.-->
+        <button class="order-button">Sipariş Ver</button>
+       
+    </div>
+
+
+    <div class="menu-item">
+
+        <img src="img/adanakebap.jpg" alt="Adana Kebap">
+        <h3>Adana Kebap</h3>
+        <p>Zırhla dövülmüş kuzu eti ile hazırlanmış,</p>
+        <p>baharatlanmış ve odun ateşinde pişirilmiş lezzet</p>
+        <span><del>80TL</del> &nbsp; 70TL</span>
+        <!--span etiketi ile fiyatı hedeflemek için kullandık.del etiketi ile eski fiyatın üstünü çizdi.
+        &nbsp ile de boşluk bıraktık.-->
+        <button class="order-button">Sipariş Ver</button>
+             
+    </div>
+
+
+    <div class="menu-item">
+
+            <img src="img/lahmacun.jpg" alt="Lahmacun">
+            <h3>Lahmacun</h3>
+            <p>İnce hamur üzerine dana kıyması</p>
+            <p>ve baharatlarla hazırlanmış,</p>
+            <p>odun ateşinde pişirilmiş çıtır lezzet.</p>
+            <span><del>50TL</del> &nbsp; 40TL</span>
+            <!--span etiketi ile fiyatı hedeflemek için kullandık.del etiketi ile eski fiyatın üstünü çizdi.
+            &nbsp ile de boşluk bıraktık.-->
+            <button class="order-button">Sipariş Ver</button>
+           
+    </div>
+
+
+   </div>
+
+   </section>
+
+   <section class="popular">
+  <h2>Popüler Yemekler</h2>
+
+  <div class="menu-items">
+
+    <div class="menu-item">
+
+        <div class="populer-badge">⭐</div>
+        <img src="img/içliköfte.jpg" alt="İçli Köfte">
+        <h3>İçli Köfte</h3>
+        <p>Bulgurun içine kıyma ve baharatlar koyularak hazırlanmış yemek.</p>
+        <span>20TL</span>
+        <button class="order-button">Sipariş Ver</button>
+
+     </div>
+     
+    
+     <div class="menu-item">
+        
+        <div class="populer-badge">⭐</div>
+        <img src="img/immabayıldı.jpg" alt="İmam Bayıldı">
+        <h3>İmam Bayıldı</h3>
+        <p>Kıyma harcının patlıcana doldurulması ile yapılan bir yemek.</p>
+        <span>55TL</span>
+        <button class="order-button">Sipariş Ver</button>
+        
+     
+     </div>
+
+
+     <div class="menu-item">
+        
+        <div class="populer-badge">⭐</div>
+        <img src="img/keşkek.jpg" alt="Keşkek">
+        <h3>Keşkek</h3>
+        <p>Bulgur ve unla hazırlanan içine et konulup dövülmüş meze</p>
+        <span>30TL</span>
+        <button class="order-button">Sipariş Ver</button>
+        
+     
+     </div>
+
+
+  </div>
+
+   </section>
+   
+   <section class="menu">
+
+   <h2>Menümüz</h2>
+
+   <div class="menu-items">
+
+        <div class="menu-item">
+
+         <img src="img/kurufasülye.png" alt="Kuru Fasülye">
+         <h3>Kuru Fasülye</h3>
+         <p>Kuru fasulyeyi haşlayarak içine salça,</p>
+         <p>baharatlar ve et konularak hazırlanan yemektir.</p>
+         <span>60TL</span>
+         <button class="order-button">Sipariş Ver</button>
+
+        </div> 
+
+        <div class="menu-item">
+    
+         <img src="img/kuşbaşılıpide.jpg" alt="kuşbaşılıpide">
+         <h3>Kuşbaşı Kaşarlı Pide</h3>
+         <p>Kenarları kapalı şekilde içinde et parçaları,</p>
+         <p>kaşar,sebze,baharatlarla hazırlanan odun ateşinde</p>
+         <p>pişirilen yemek.</p>
+         
+         <span>50TL</span>
+         <button class="order-button">Sipariş Ver</button>
+    
+        </div>
+
+
+        <div class="menu-item">
+        
+             <img src="img/kiymalipide.jpg" alt="kıymalı pide">
+             <h3>Kıymalı Pide</h3>
+             <p>Kenarları kapalı şekilde içinde kıyma,</p>
+             <p>kaşar,sebze,baharatlarla hazırlanan odun </p>
+             <p>ateşinde pişirilen yemek.</p>
+             <span>40TL</span>
+             <button class="order-button">Sipariş Ver</button>    
+        
+         </div>
+          
+        </div>
+
+            <h3>Çorbalar</h3>
+
+        <div class="menu-items">
+
+            <div class="menu-item">
+        
+             <img src="img/kellepaça çorbası.jpg" alt="kellepaça çorbası">
+             <h3>Kellepaça Çorbası</h3>
+             <p>Kelle etinden yapılmış,sarımsak 
+             <p>ve baharatlarla beraber un ile</p> 
+             <p>kavrulup hazırlanan üzerinde</p>
+             <p>tereyagı ile servis edilen lezzetli bir tür çorba.</p>
+             <span>40TL</span>
+             <button class="order-button">Sipariş Ver</button>
+        
+        
+            </div>
+
+
+            <div class="menu-item">
+        
+             <img src="img/tarhanaçorbası.webp" alt="Tarhana Çorbası">
+             <h3>Tarhana Çorbası</h3>
+             <p>Ana malzemesi yoğurt,un, çeşitli sebzeler</p>
+             <p>(soğan, biber, domates) ve baharatlardır.</p>
+             <p>Hazır tarhana, sıcak su veya et suyuyla pişirilerek çorba yapılır.</p>
+              
+             <span>30TL</span>
+             <button class="order-button">Sipariş Ver</button>
+        
+        
+            </div>
+
+        
+
+            <div class="menu-item">
+        
+             <img src="img/mercimekçorbası.jpg" alt="Mercimek Çorbası">
+             <h3>Mercimek Çorbası</h3>
+             <p>Kırmızı mercimek ve sebzelerle hazırlanan malzemelerin</p>
+             <p> birlikte pişirilip,blenderdan geçirilerek</p>
+             <p> pürüzsüz bir kıvam elde edilmesiyle yapılan çorbadır. </p>
+             <span>30TL</span>
+             <button class="order-button">Sipariş Ver</button>
+        
+        
+            </div>
+
+        </div>
+
+
+
+   </section>
+
+
+   <footer class="footer">
+
+    <br>
+    <br>
+    <p>
+
+    2025 Yılı Lezzetli Yemekler Web Sitesi //
+    <a href="https://github.com/busracck" target="_blank">Web Sitesine ait kodlara buradan ulaşabilirsiniz.</a>
+
+   </p>
+
+   </footer>
+
+</body>
+
+</html>
